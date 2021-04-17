@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Online Tuition</title>
+<!--
+
+Lava Landing Page
+
+https://templatemo.com/tm-540-lava-landing-page
+
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+
+    <link rel="stylesheet" href="./css/templatemo-lava.css">
+
+    <link rel="stylesheet" href="./css/owl-carousel.css">
+
+	<script language="javascript" type="text/javascript">
+		function buttonClick(){
+		var url = document.getElementById("inputURL").value;
+		window.location = url;
+		}
+	</script>
+
+</head>
+
+<body>
+
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="/" class="logo">
+                            TUTORS
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="/" class="menu-item">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about" class="menu-item">About</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">Sign-In</a>
+                                <ul>
+                                    <li><a href="/login" class="menu-item">Teacher</a></li>
+                                    <li><a href="/loginStud" class="menu-item">Student</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a>Sign-Up</a>
+                                <ul>
+                                    <li><a href="/teacherReg" class="menu-item">Teacher</a></li>
+                                    <li><a href="/studentReg" class="menu-item">Student</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<div class="container">
+<div class="row"  style="margin-top: 30px; margin-top: 5rem;">
+	<!-- nav -->
+	<div class="col-md-4 card" style="margin-right: 30px;">
+		<div>
+			<p style="text-align: center;">Student Profile</p>
+		</div>
+		<div>
+			<center>
+				<table class="table table-hover ">
+					<tr><td>Name </td><td><%= name %></td></tr>
+					<tr><td>Email </td><td><%= email %></td></tr>
+				</table>
+			</center>
+		</div>
+		<div class="abc">
+			<a class="btn btn-sm btn-danger" href="/logout" style="font-size: inherit;">Logout</a>
+		</div>
+	</div>
+
+	<!-- dashboard -->
+	<div class="col-md-7 card">
+	<div style="display: block; padding: 2rem;" >	
+		<span style="display: inline-block; float: left;"><h2 style="text-align: center;">Tutor List</h2></span>
+		<span style="display: inline-block; float: right;">
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2 style="color: darkcyan !important;"" type="text" id="inputURL" name="inputURL" placeholder="Enter Class Link">
+				<button class="btn btn-outline-danger my-2 my-sm-0" type="button" OnClick="buttonClick()"/>Join Classroom</button>
+			  </form>
+        </span>
+	</div>		
+		<!-- collapse -->
+		<div id="accordion">
+
+			<img src="/images/kk.jpg" alt="" style="width: 100%; height: 80vh;">
+	</div>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Login</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/templatemo-lava.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$( "#form2" ).submit(function(event) {
+
+				event.preventDefault();
+
+				$.ajax({
+					type: 'POST',
+					url: '/forgetpassStud',
+					data: $('#form2').serialize(),
+					dataType: "json",
+					success: function(response){
+						//alert("a");
+						//console.log(response.Success);
+						$('#form2')[0].reset();
+						//alert("abc");
+						document.getElementById("check").innerHTML=response.Success;
+
+						setTimeout(function(){
+							document.getElementById("check").innerHTML="";
+						},3000);
+						if (response.Success=="Password changed!") {
+							document.getElementById("aa").click();
+						};
+					},
+					error: function() {
+					}
+				})
+			});
+
+		});
+	</script>
+</head>
+
+
+<body>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="/" class="logo">
+                            TUTORS
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="/" class="menu-item">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about" class="menu-item">About</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">Sign-In</a>
+                                <ul>
+                                    <li><a href="/login" class="menu-item">Teacher</a></li>
+                                    <li><a href="/loginStud" class="menu-item">Student</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a>Sign-Up</a>
+                                <ul>
+                                    <li><a href="/teacherReg" class="menu-item">Teacher</a></li>
+                                    <li><a href="/studentReg" class="menu-item">Student</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>	
+	<div class="container">
+	<div class="col-md-8 col-md-offset-4" style="border: .5px solid lightgray; padding: 15px; border-radius: 5px; margin-top: 10rem; margin-left: 12rem;">
+			<div>
+				<h2 style="color: #FBA70B;">Change Student Password</h2>
+			</div>
+			<div class="form-group" style="margin-top: 2rem;">
+				<form id="form2" method="post">
+					<input type="text" name="email" placeholder="E-mail" required="" class="form-control" style="font-size: inherit;"><br/>
+					<input type="password" name="password" placeholder="Password" required="" class="form-control" style="font-size: inherit;"><br/>
+					<input type="password" name="passwordConf" placeholder="Confirm Password" required="" class="form-control" style="font-size: inherit;"><br/>
+					<input type="submit" value="Change" class="btn btn-danger">
+				</form>
+			</div>
+			<div  class="mssg bg-danger">
+				<span id="check"></span>
+				</div>
+				<div id="LangTable"><a href="/profileStud" id="aa"></a>
+				</div>
+				<div><span>Login?</span><a href="/loginStud">Click here</a></div>
+			</div>
+			<div id="LangTable"><a href="/login" id="aa"></a>
+			</div>
+</div>
+</div>
+<footer id="contact-us">
+	<div class="container">
+		<div class="footer-content">
+			<div class="row">
+				<!-- ***** Contact Form Start ***** -->
+				<div class="col-lg-6 col-md-12 col-sm-12">
+					<div class="contact-form">
+						<form id="contact" action="" method="post">
+							<div class="row">
+								<div class="col-md-6 col-sm-12">
+									<fieldset>
+										<input name="name" type="text" id="name" placeholder="Full Name" required=""
+											style="background-color: rgba(250,250,250,0.3);">
+									</fieldset>
+								</div>
+								<div class="col-md-6 col-sm-12">
+									<fieldset>
+										<input name="email" type="text" id="email" placeholder="E-Mail Address"
+											required="" style="background-color: rgba(250,250,250,0.3);">
+									</fieldset>
+								</div>
+								<div class="col-lg-12">
+									<fieldset>
+										<textarea name="message" rows="6" id="message" placeholder="Your Message"
+											required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
+									</fieldset>
+								</div>
+								<div class="col-lg-12">
+									<fieldset>
+										<button type="submit" id="form-submit" class="main-button">Send Message
+											Now</button>
+									</fieldset>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- ***** Contact Form End ***** -->
+				<div class="right-content col-lg-6 col-md-12 col-sm-12">
+					<h2>More About <em>US</em></h2>
+					<p>Phasellus dapibus urna vel lacus accumsan, iaculis eleifend leo auctor. Duis at finibus odio.
+						Vivamus ut pharetra arcu, in porta metus. Suspendisse blandit pulvinar ligula ut elementum.
+						<br><br>If you need this contact form to send email to your inbox, you may follow our <a
+							rel="nofollow" href="#" target="_parent">contact</a> page
+						for more detail.</p>
+					<ul class="social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-rss"></i></a></li>
+						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="sub-footer">
+					<p>Copyright &copy; 2020 DeathWatch</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

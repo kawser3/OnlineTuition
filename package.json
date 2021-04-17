@@ -1,0 +1,27 @@
+{
+  "name": "OnlineTuition",
+  "version": "1.0.0",
+  "description": "npm install -g heroku",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongo": "^3.0.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.12.3",
+    "peer": "^0.5.3",
+    "peerjs": "^1.3.2",
+    "socket.io": "^2.4.1",
+    "uuid": "^8.3.2",
+    "websocket": "^1.0.33"
+  },
+  "devDependencies": {}
+}

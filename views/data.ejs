@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Online Tuition</title>
+<!--
+
+Lava Landing Page
+
+https://templatemo.com/tm-540-lava-landing-page
+
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+
+    <link rel="stylesheet" href="./css/templatemo-lava.css">
+
+    <link rel="stylesheet" href="./css/owl-carousel.css">
+
+</head>
+
+<body>
+
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="/" class="logo">
+                            TUTORS
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="/" class="menu-item">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about" class="menu-item">About</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">Sign-In</a>
+                                <ul>
+                                    <li><a href="/login" class="menu-item">Teacher</a></li>
+                                    <li><a href="/loginStud" class="menu-item">Student</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a>Sign-Up</a>
+                                <ul>
+                                    <li><a href="/teacherReg" class="menu-item">Teacher</a></li>
+                                    <li><a href="/studentReg" class="menu-item">Student</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<div class="container">
+<div class="row"  style="margin-top: 30px; margin-top: 5rem;">
+	
+	<!-- nav -->
+	<div class="col-md-4 card" style="margin-right: 30px;">
+		<div>
+			<p style="text-align: center;">Teacher Profile</p>
+		</div>
+		<div>
+			<center>
+				<table class="table table-hover ">
+					<tr><td>Name </td><td><%= name %></td></tr>
+					<tr><td>Email </td><td><%= email %></td></tr>
+				</table>
+			</center>
+		</div>
+		<div class="abc">
+			<a class="btn btn-sm btn-danger" href="/logout" style="font-size: inherit;">Logout</a>
+		</div>
+	</div>
+
+	<!-- dashboard -->
+	<div class="col-md-7 card">
+		
+		<p style="text-align: center;">Dashboard</p>
+		<!--  -->
+
+		<a href="/room" type="button" class="btn btn-outline-danger mb-4">Create Room</a>
+	
+		<!--  -->
+
+		<!-- collapse -->
+		<div id="accordion">
+			<div class="">
+			  <div class="card-header" id="headingOne">
+				<h5 class="mb-0">
+				  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					Collapsible Group Item #1
+				  </button>
+				</h5>
+			  </div>
+		  
+			  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+				<div class="card-body">
+				  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			  </div>
+			</div>
+			<div class="">
+			  <div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+				  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					Collapsible Group Item #2
+				  </button>
+				</h5>
+			  </div>
+			  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+				  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			  </div>
+			</div>
+			<div class="">
+			  <div class="card-header" id="headingThree">
+				<h5 class="mb-0">
+				  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					Collapsible Group Item #3
+				  </button>
+				</h5>
+			  </div>
+			  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				<div class="card-body">
+				  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			  </div>
+			</div>
+		  </div>
+	</div>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
